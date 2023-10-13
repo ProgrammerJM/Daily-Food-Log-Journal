@@ -81,6 +81,7 @@ img {
   border: 1px grey solid;
   width: auto;
   padding: 10px;
+  flex-wrap: wrap;
 }
 .grid > form > div > h1 {
   padding: 1px;
@@ -131,7 +132,7 @@ footer {
   display: flex;
   justify-content: flex-start;
   background-color: #efefef;
-  padding: 40px 0px 40px 150px;
+  padding: 40px 0px 40px 200px;
   /* padding-left: 150px; */
 }
 .clears {
@@ -181,6 +182,7 @@ footer {
   .grid {
     margin: 5%;
     width: 90%;
+    flex-wrap: wrap;
   }
   .head h1 {
     width: 65%;
@@ -201,6 +203,12 @@ footer {
   }
   .clears > .clear3 {
     margin-left: 20px;
+  }
+  footer {
+    padding: 30px 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
   }
 }
 .remove-item {
