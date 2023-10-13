@@ -1,5 +1,8 @@
-* {
+*,
+*::before,
+*::after {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 body {
@@ -111,6 +114,15 @@ button {
   width: auto;
   margin: 5px 5px 5px 0px;
 }
+.btn-link {
+  font-size: 16px;
+  background-color: transparent;
+  color: #333;
+  border: none;
+  padding: 0px;
+  cursor: pointer;
+  height: 0;
+}
 .date {
   margin: 10px 10px 10px 50px;
 }
@@ -159,7 +171,7 @@ footer {
   margin: 0;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .items li {
     width: 5%;
   }
@@ -190,4 +202,10 @@ footer {
   .clears > .clear3 {
     margin-left: 20px;
   }
+}
+.remove-item {
+  padding: 0;
+}
+.fa-xmark {
+  padding: auto;
 }

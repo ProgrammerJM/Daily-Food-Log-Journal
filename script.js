@@ -128,11 +128,20 @@ function createIcon(classes) {
   icon.className = classes;
   return icon;
 }
+function checkUI() {
+  itemInput1.value = '';
+
+  // const items = itemList1.querySelectorAll('li');
+  // if (items.length === 0) {
+  //   items.innerHTML = '';
+  // }
+}
 // Removing prompt from list xmark button
 function removeItem(item) {
   if (confirm(`Are you sure you want to remove the "${item.textContent}"?`)) {
     item.remove();
   }
+  checkUI();
 }
 // Removing Item from the list of unorderlist
 function onClickItem1(e) {
