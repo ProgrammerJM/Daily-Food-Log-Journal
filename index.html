@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Daily Food Logs</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="head">
+          <img src="assets/menu.png" />
+          <h1>Daily Food Logs</h1>
+        </div>
+        <div class="account-info">
+          <h3>Hi, Mark!</h3>
+          <p>Don't forget to log your daily food intake!</p>
+          <button id="dark-mode" class="dark-mode">Dark Mode</button>
+        </div>
+      </header>
+      <div class="log-component">
+        <p id="date" class="date"></p>
+        <div class="grid">
+          <form id="item-form1">
+            <div class="form-control">
+              <h1>Breakfast</h1>
+              <input
+                type="text"
+                class="form-input"
+                id="item-input1"
+                name="item"
+                placeholder="Enter Food Name"
+              />
+              <button type="submit" class="btn" id="btn-breakfast">
+                <i class="fa-solid fa-plus"></i> Add Food
+              </button>
+              <ul id="item-list1" class="items"></ul>
+            </div>
+          </form>
+          <form id="item-form2">
+            <div class="form-control">
+              <h1>Lunch</h1>
+              <input
+                type="text"
+                class="form-input"
+                id="item-input2"
+                name="item"
+                placeholder="Enter Food Name"
+              />
+              <button type="submit" class="btn" id="btn-lunch">
+                <i class="fa-solid fa-plus"></i> Add Food
+              </button>
+              <ul id="item-list2" class="items"></ul>
+            </div>
+          </form>
+          <form id="item-form3">
+            <div class="form-control">
+              <h1>Dinner</h1>
+              <input
+                type="text"
+                class="form-input"
+                id="item-input3"
+                name="item"
+                placeholder="Enter Food Name"
+              />
+              <button type="submit" class="btn" id="btn-dinner">
+                <i class="fa-solid fa-plus"></i> Add Food
+              </button>
+              <ul id="item-list3" class="items"></ul>
+            </div>
+          </form>
+        </div>
+        <div class="clears">
+          <button id="clear1" class="btn-clear clear1">Clear Breakfast</button>
+          <button id="clear2" class="btn-clear clear2">Clear Lunch</button>
+          <button id="clear3" class="btn-clear clear3">Clear Dinner</button>
+        </div>
+      </div>
+    </div>
+    <footer><p>Developer Info Section</p></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
